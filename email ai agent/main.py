@@ -34,7 +34,7 @@ def save(filename: str) -> str:
 llm = ChatGoogleGenerativeAI(
     model='gemini-1.5-flash',
     temperature=0.1,
-    api_key='AIzaSyCVM03md5zcStbs_crXg_56ROj-pdSlBEo'  
+    api_key='Your-gemini-api-key'  
 )
 llm_with_tools = llm.bind_tools([update, save])
 
