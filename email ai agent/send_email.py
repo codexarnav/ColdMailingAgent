@@ -13,7 +13,7 @@ msg['To'] = "arnavashishsharma22@gmail.com"
 
 # Login & send email using Gmail SMTP
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-    smtp.login("arnavashishshrma@gmail.com", "lhvl cfdb hlaf qrqb")  # Use App Password, not Gmail password
+    smtp.login("arnavashishshrma@gmail.com","Your-gmail-password")  # Use App Password, not Gmail password
     smtp.send_message(msg)
 
 print("Email sent successfully!")
