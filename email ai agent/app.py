@@ -32,7 +32,7 @@ def save(filename: str) -> str:
         f.write(document_content)
     return "Document saved successfully."
 
-llm = ChatGoogleGenerativeAI(model='gemini-1.5-flash', temperature=0.2,api_key='AIzaSyCVM03md5zcStbs_crXg_56ROj-pdSlBEo')
+llm = ChatGoogleGenerativeAI(model='gemini-1.5-flash', temperature=0.2,api_key='Your_Gemini_API_key')
 llm_with_tools = llm.bind_tools([update, save])
 
 def model(state: AgentState) -> AgentState:
